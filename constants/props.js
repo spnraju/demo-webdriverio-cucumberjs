@@ -1,6 +1,6 @@
 const URL = {
-  FRONT_END: 'https://www.phptravels.net/index.php',
-  ADMIN: 'https://www.phptravels.net/index.php',
+  FRONT_END: 'https://www.phptravels.net/login',
+  ADMIN: 'https://www.phptravels.net/admin',
 };
 
 const EMAIL = {
@@ -13,8 +13,14 @@ const PASSWORD = {
   ADMIN: 'demoadmin',
 };
 
+const PAGE_TITLE = {
+  FRONT_END: 'Login',
+  ADMIN: 'Administator Login',
+}
+
 Object.freeze(URL);
 Object.freeze(EMAIL);
 Object.freeze(PASSWORD);
+Object.freeze(PAGE_TITLE);
 
-export {URL, EMAIL, PASSWORD};
+export {URL, EMAIL, PASSWORD, PAGE_TITLE};
