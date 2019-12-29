@@ -2,7 +2,7 @@ exports.config = {
 
   runner: 'local',
   specs: [
-    './features/*.feature'
+    './features/*.feature',
   ],
   exclude: [
   ],
@@ -10,18 +10,18 @@ exports.config = {
   maxInstances: 5,
   capabilities: [
     {
-      maxInstances: 1,
-      browserName: 'chrome',
+      'maxInstances': 1,
+      'browserName': 'chrome',
       'goog:chromeOptions': {
         w3c: true,
-        args: ['--headless']
-      }
-    }
+        args: ['--headless'],
+      },
+    },
   ],
   // logLevel: 'info',
   logLevels: {
-    webdriverio: 'error',
-    webdriver: 'error',
+    'webdriverio': 'error',
+    'webdriver': 'error',
     '@wdio/applitools-service': 'error',
     '@wdio/browserstack-service': 'error',
     '@wdio/devtools-service': 'error',
@@ -34,7 +34,7 @@ exports.config = {
     '@wdio/cli': 'error',
     '@wdio/config': 'error',
     '@wdio/sync': 'error',
-    '@wdio/utils': 'error'
+    '@wdio/utils': 'error',
   },
   sync: true,
   coloredLogs: true,
@@ -51,21 +51,21 @@ exports.config = {
       outputDir: 'allure-results',
       disableWebdriverStepsReporting: true,
     }],
-    ],
+  ],
   cucumberOpts: {
     requireModule: ['@babel/register'],
-    require: ['./features/step-definitions/*.js'],        // <string[]> (file/dir) require files before executing features
-    backtrace: false,   // <boolean> show full backtrace for errors
-    dryRun: false,      // <boolean> invoke formatters without executing steps
-    failFast: false,    // <boolean> abort the run on first failure
+    require: ['./features/step-definitions/*.js'], // <string[]> (file/dir) require files before executing features
+    backtrace: false, // <boolean> show full backtrace for errors
+    dryRun: false, // <boolean> invoke formatters without executing steps
+    failFast: false, // <boolean> abort the run on first failure
     format: ['pretty'], // <string[]> (type[:path]) specify the output format, optionally supply PATH to redirect formatter output (repeatable)
-    colors: true,       // <boolean> disable colors in formatter output
-    snippets: true,     // <boolean> hide step definition snippets for pending steps
-    source: true,       // <boolean> hide source uris
-    profile: [],        // <string[]> (name) specify the profile to use
-    strict: false,      // <boolean> fail if there are any undefined or pending steps
-    tagExpression: '',  // <string> (expression) only execute the features or scenarios with tags matching the expression
-    timeout: 60000,     // <number> timeout for step definitions
+    colors: true, // <boolean> disable colors in formatter output
+    snippets: true, // <boolean> hide step definition snippets for pending steps
+    source: true, // <boolean> hide source uris
+    profile: [], // <string[]> (name) specify the profile to use
+    strict: false, // <boolean> fail if there are any undefined or pending steps
+    tagExpression: '', // <string> (expression) only execute the features or scenarios with tags matching the expression
+    timeout: 60000, // <number> timeout for step definitions
     ignoreUndefinedDefinitions: false, // <boolean> Enable this config to treat undefined definitions as warnings.
   },
   /**
@@ -171,6 +171,6 @@ exports.config = {
   * @param {String} oldSessionId session ID of the old session
   * @param {String} newSessionId session ID of the new session
   */
-  //onReload: function(oldSessionId, newSessionId) {
-  //}
-}
+  // onReload: function(oldSessionId, newSessionId) {
+  // }
+};
