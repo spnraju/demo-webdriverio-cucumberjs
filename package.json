@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/wdio ./config/wdio.conf.js",
-    "allure": "allure generate --clean && allure open 'allure-report'",
+    "allure": "allure generate --clean && allure open",
     "lint": "eslint ."
   },
   "repository": {
@@ -37,10 +37,10 @@
     "node": ">= 10.0.0"
   },
   "dependencies": {
-    "@babel/register": "^7.7.7",
     "@babel/cli": "^7.7.7",
     "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.7.7"
+    "@babel/preset-env": "^7.7.7",
+    "@babel/register": "^7.7.7"
   },
   "devDependencies": {
     "@wdio/allure-reporter": "^5.16.16",
