@@ -1,6 +1,5 @@
-import {Given, When, Then} from 'cucumber';
-import {props} from '../../constants';
-import log4js from 'log4js';
+import { Given, When, Then } from 'cucumber';
+import { props } from '../../constants';
 import assert from 'assert';
 
 const log = log4js.getLogger();
@@ -9,6 +8,7 @@ Given(/^user is in login page of "(.*?)" application$/, (app) => {
   const url = app === 'frontend' ? props.URL.FRONT_END : props.URL.ADMIN;
   const expectedText = app === 'frontend' ? props.PAGE_TITLE.FRONT_END : props.PAGE_TITLE.ADMIN;
   browser.url(url);
+  log.info('test');
   assert.equal(browser.getTitle(), expectedText); 
 });
 

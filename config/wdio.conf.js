@@ -1,3 +1,5 @@
+global.log4js = require('../log4js.config').log4js;
+
 exports.config = {
 
   runner: 'local',
