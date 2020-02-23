@@ -60,6 +60,7 @@
     "husky": "^3.1.0",
     "log4js": "^6.1.2",
     "prettier": "^1.19.1",
-    "wdio-cucumber-reporter": "0.0.2"
+    "wdio-cucumber-reporter": "0.0.2",
+    "wdio-cucumberjs-json-reporter": "^1.1.3"
   }
 }

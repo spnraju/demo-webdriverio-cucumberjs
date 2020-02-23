@@ -55,6 +55,10 @@ exports.config = {
       disableWebdriverScreenshotsReporting: false,
       useCucumberStepReporter: false,
     }],
+    ['cucumberjs-json', {
+      jsonFolder: 'reports',
+      language: 'en',
+    }],
   ],
   cucumberOpts: {
     requireModule: ['@babel/register'],
