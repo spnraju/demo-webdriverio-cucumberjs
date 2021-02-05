@@ -38,10 +38,10 @@
     "node": ">= 10.0.0"
   },
   "dependencies": {
-    "@babel/cli": "^7.12.10",
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/register": "^7.12.10"
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/register": "^7.12.13"
   },
   "devDependencies": {
     "@wdio/allure-reporter": "^6.11.0",
@@ -53,7 +53,7 @@
     "allure-commandline": "2.13.8",
     "chromedriver": "^88.0.0",
     "cucumber": "^6.0.5",
-    "eslint": "^7.18.0",
+    "eslint": "^7.19.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
