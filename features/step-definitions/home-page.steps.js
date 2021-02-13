@@ -1,4 +1,4 @@
-import { Given, When, Then } from 'cucumber';
+import { Given, When, Then } from '@cucumber/cucumber';
 import { props } from '../../constants';
 import assert from 'assert';
 
