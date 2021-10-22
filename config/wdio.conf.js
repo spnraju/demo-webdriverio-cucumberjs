@@ -41,7 +41,7 @@ exports.config = {
   sync: true,
   coloredLogs: true,
   bail: 0,
-  baseUrl: 'https://www.phptravels.net/',
+  baseUrl: 'https://the-internet.herokuapp.com/',
   waitforTimeout: 10000,
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
