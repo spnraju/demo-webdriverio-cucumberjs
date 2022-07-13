@@ -16,6 +16,6 @@ jobs:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
         with:
-          node-version: 14.x
+          node-version: 14
       - run: npm install
       - run: npm test
