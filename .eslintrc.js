@@ -1,21 +1,20 @@
 module.exports = {
-  'env': {
-    'es6': true,
-    'node': true,
+  root: true,
+  plugins: ['wdio'],
+  extends: ['eslint:recommended', 'eslint-config-prettier'],
+  env: {
+    node: true,
+    es6: true,
   },
-  'extends': [
-    'google',
-    'prettier'
-  ],
-  'globals': {
-    'When': 'readonly',
-    'Given': 'readonly',
-    'Then': 'readonly',
+  globals: {
+    When: true,
+    Given: true,
+    Then: true,
+    browser: true,
   },
-  'parserOptions': {
-    'ecmaVersion': 2018,
-    'sourceType': 'module',
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
   },
-  'rules': {
-  },
+  rules: {},
 };

@@ -1,47 +1,23 @@
-global.log4js = require('../log4js.config').log4js;
-
 exports.config = {
-
   runner: 'local',
-  specs: [
-    './features/*.feature',
-  ],
-  exclude: [
-  ],
+  specs: ['./features/*.feature'],
+  exclude: [],
 
   maxInstances: 5,
   capabilities: [
     {
-      'maxInstances': 1,
-      'browserName': 'chrome',
+      maxInstances: 1,
+      browserName: 'chrome',
       'goog:chromeOptions': {
         w3c: true,
         args: ['--headless'],
       },
     },
   ],
-  // logLevel: 'info',
-  logLevels: {
-    'webdriverio': 'error',
-    'webdriver': 'error',
-    '@wdio/applitools-service': 'error',
-    '@wdio/browserstack-service': 'error',
-    '@wdio/devtools-service': 'error',
-    '@wdio/sauce-service': 'error',
-    '@wdio/mocha-framework': 'error',
-    '@wdio/jasmine-framework': 'error',
-    '@wdio/local-runner': 'error',
-    '@wdio/lambda-runner': 'error',
-    '@wdio/sumologic-reporter': 'error',
-    '@wdio/cli': 'error',
-    '@wdio/config': 'error',
-    '@wdio/sync': 'error',
-    '@wdio/utils': 'error',
-  },
-  sync: true,
+  logLevel: 'warn',
   coloredLogs: true,
   bail: 0,
-  baseUrl: 'https://the-internet.herokuapp.com/',
+  baseUrl: 'https://www.saucedemo.com',
   waitforTimeout: 10000,
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
@@ -49,16 +25,22 @@ exports.config = {
   framework: 'cucumber',
   // specFileRetries: 1,
   reporters: [
-    ['allure', {
-      outputDir: 'allure-results',
-      disableWebdriverStepsReporting: true,
-      disableWebdriverScreenshotsReporting: false,
-      useCucumberStepReporter: false,
-    }],
-    ['cucumberjs-json', {
-      jsonFolder: 'reports',
-      language: 'en',
-    }],
+    [
+      'allure',
+      {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: false,
+        useCucumberStepReporter: false,
+      },
+    ],
+    [
+      'cucumberjs-json',
+      {
+        jsonFolder: 'reports',
+        language: 'en',
+      },
+    ],
   ],
   cucumberOpts: {
     requireModule: ['@babel/register'],
@@ -76,7 +58,6 @@ exports.config = {
     strict: true, // <boolean> fail if there are any undefined or pending steps
     tagExpression: '', // <string> (expression) only execute the features or scenarios with tags matching the expression
     timeout: 60000, // <number> timeout for step definitions
-    ignoreUndefinedDefinitions: false, // <boolean> Enable this config to treat undefined definitions as warnings.
   },
   /**
    * Gets executed once before all workers get launched.
@@ -177,10 +158,10 @@ exports.config = {
   // onComplete: function(exitCode, config, capabilities, results) {
   // },
   /**
-  * Gets executed when a refresh happens.
-  * @param {String} oldSessionId session ID of the old session
-  * @param {String} newSessionId session ID of the new session
-  */
+   * Gets executed when a refresh happens.
+   * @param {String} oldSessionId session ID of the old session
+   * @param {String} newSessionId session ID of the new session
+   */
   // onReload: function(oldSessionId, newSessionId) {
   // }
 };
