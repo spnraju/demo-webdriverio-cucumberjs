@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Boilerplate for WebDriverIO with CucumberJS",
   "scripts": {
-    "test": "node_modules/.bin/wdio ./config/wdio.conf.js",
-    "local": "wdio ./config/wdio.conf.js",
+    "test": "wdio ./config/wdio.conf.js",
     "allure": "allure generate --clean && allure open",
     "lint": "eslint --ext .js . --fix",
     "prettier": "prettier **/*.js --write",
