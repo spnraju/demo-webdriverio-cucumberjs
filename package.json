@@ -39,8 +39,8 @@
   },
   "dependencies": {
     "@babel/cli": "^7.18.10",
-    "@babel/core": "^7.19.0",
-    "@babel/preset-env": "^7.19.0",
+    "@babel/core": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
     "@babel/register": "^7.18.9"
   },
   "devDependencies": {
@@ -52,7 +52,7 @@
     "allure-commandline": "2.18.1",
     "chromedriver": "^105.0.0",
     "cucumber": "^6.0.5",
-    "eslint": "^8.23.0",
+    "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-wdio": "^7.21.0",
     "prettier": "^2.7.1",
