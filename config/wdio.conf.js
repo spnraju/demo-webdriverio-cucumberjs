@@ -1,6 +1,6 @@
 exports.config = {
   runner: 'local',
-  specs: ['./features/*.feature'],
+  specs: ['../features/*.feature'],
   exclude: [],
 
   maxInstances: 5,
