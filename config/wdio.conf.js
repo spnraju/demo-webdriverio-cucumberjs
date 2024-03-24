@@ -1,4 +1,4 @@
-exports.config = {
+export const config = {
   runner: 'local',
   specs: ['../features/*.feature'],
   exclude: [],
@@ -21,7 +21,7 @@ exports.config = {
   waitforTimeout: 10000,
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
-  services: ['selenium-standalone'],
+  services: [],
   framework: 'cucumber',
   // specFileRetries: 1,
   reporters: [
