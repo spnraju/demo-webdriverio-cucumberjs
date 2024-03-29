@@ -2939,9 +2939,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chromedriver@npm:^123.0.0":
-  version: 123.0.0
-  resolution: "chromedriver@npm:123.0.0"
+"chromedriver@npm:^123.0.1":
+  version: 123.0.1
+  resolution: "chromedriver@npm:123.0.1"
   dependencies:
     "@testim/chrome-version": "npm:^1.1.4"
     axios: "npm:^1.6.7"
@@ -2952,7 +2952,7 @@ __metadata:
     tcp-port-used: "npm:^1.0.2"
   bin:
     chromedriver: bin/chromedriver
-  checksum: 10c0/1e02b035c99201c15c63f528695bfa5a4222ec5beb704bb801d5f4ba302b133e235d62afcad711c651452ff90529ba0958545a576c5ca8eb97a472f11595a77b
+  checksum: 10c0/64690fea486b36c3f8f04f5c7ac9de12e587a752eedb722e0bbcc409fdcb2324c1f811f2ebac0ce0b972d10ce58f6fff7f838ed3f79e1397c91bb99497fd92c6
   languageName: node
   linkType: hard
 
@@ -3492,7 +3492,7 @@ __metadata:
     "@wdio/cucumber-framework": "npm:^8.35.0"
     "@wdio/local-runner": "npm:^8.35.1"
     allure-commandline: "npm:^2.27.0"
-    chromedriver: "npm:^123.0.0"
+    chromedriver: "npm:^123.0.1"
     cucumber: "npm:^6.0.7"
     eslint: "npm:^8.57.0"
     eslint-config-prettier: "npm:^9.1.0"
