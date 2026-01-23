@@ -39,23 +39,23 @@
     "node": ">= 16.0.0"
   },
   "dependencies": {
-    "@babel/cli": "^7.28.3",
-    "@babel/core": "^7.28.5",
-    "@babel/preset-env": "^7.28.5",
-    "@babel/register": "^7.28.3"
+    "@babel/cli": "^7.28.6",
+    "@babel/core": "^7.28.6",
+    "@babel/preset-env": "^7.28.6",
+    "@babel/register": "^7.28.6"
   },
   "devDependencies": {
-    "@wdio/allure-reporter": "^9.21.0",
-    "@wdio/cli": "^9.21.1",
-    "@wdio/cucumber-framework": "^9.21.0",
-    "@wdio/local-runner": "^9.21.0",
+    "@wdio/allure-reporter": "^9.23.2",
+    "@wdio/cli": "^9.23.2",
+    "@wdio/cucumber-framework": "^9.23.2",
+    "@wdio/local-runner": "^9.23.2",
     "allure-commandline": "^2.36.0",
-    "chromedriver": "^143.0.3",
+    "chromedriver": "^144.0.0",
     "cucumber": "^6.0.7",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-wdio": "^9.16.2",
-    "prettier": "^3.7.4",
+    "eslint-plugin-wdio": "^9.23.0",
+    "prettier": "^3.8.1",
     "wdio-cucumber-reporter": "^0.0.2",
     "wdio-cucumberjs-json-reporter": "^6.0.1"
   }
