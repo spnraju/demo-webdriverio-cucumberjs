@@ -1883,12 +1883,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/config-helpers@npm:^0.5.5":
-  version: 0.5.5
-  resolution: "@eslint/config-helpers@npm:0.5.5"
+"@eslint/config-helpers@npm:^0.6.0":
+  version: 0.6.0
+  resolution: "@eslint/config-helpers@npm:0.6.0"
   dependencies:
     "@eslint/core": "npm:^1.2.1"
-  checksum: 10c0/18889c062cd6bdbd4cd92fe57318c44465ea66184aa0ba204a4420712c66764c64093a7905b6c2ffde23e51b268ca2cec1a39c605d336bebf17ee1ba4f0fc0bb
+  checksum: 10c0/f9af20e8b60b0ba27edb74b8eb40c0c5d51a9bf9baf9e053bb57833a87cb0a1c49b4dfaad88fc24d49c907ad1324c8a0b668684fa9c321351dac4bc9155ec10a
   languageName: node
   linkType: hard
 
@@ -2983,6 +2983,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"adm-zip@npm:^0.5.17":
+  version: 0.5.17
+  resolution: "adm-zip@npm:0.5.17"
+  checksum: 10c0/29b8f2a1070fc540ad9a45b13d0ceffd141d78e5a4501f102e978f0256f8290326009ccd3411213e90f3a810c830b39453548638879b3295ddc3814c20a8307b
+  languageName: node
+  linkType: hard
+
 "agent-base@npm:9.0.0":
   version: 9.0.0
   resolution: "agent-base@npm:9.0.0"
@@ -3028,12 +3035,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"allure-commandline@npm:^2.40.0":
-  version: 2.40.0
-  resolution: "allure-commandline@npm:2.40.0"
+"allure-commandline@npm:^2.41.0":
+  version: 2.41.0
+  resolution: "allure-commandline@npm:2.41.0"
   bin:
     allure: bin/allure
-  checksum: 10c0/cd263a60091bc1b8394ddfc883f433899eb88de4b3f221fc78a5cc70338209ed2e0f44489f6235dbdc5681813b25dd3572fb166c9ad39e3da5be0d8c7bbfc732
+  checksum: 10c0/20025a71d7eb119c2eeee873920674373b173a5d5674d4caffc421c6fe45d3bbcc376a07a685897c1740c21c6617239b979e0c105b1fa938c3c16474f6f092ea
   languageName: node
   linkType: hard
 
@@ -3711,20 +3718,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chromedriver@npm:^148.0.2":
-  version: 148.0.2
-  resolution: "chromedriver@npm:148.0.2"
+"chromedriver@npm:^148.0.3":
+  version: 148.0.3
+  resolution: "chromedriver@npm:148.0.3"
   dependencies:
     "@testim/chrome-version": "npm:^1.1.4"
+    adm-zip: "npm:^0.5.17"
     axios: "npm:^1.16.0"
     compare-versions: "npm:^6.1.0"
-    extract-zip: "npm:^2.0.1"
     proxy-agent: "npm:^8.0.1"
     proxy-from-env: "npm:^2.0.0"
     tcp-port-used: "npm:^1.0.2"
   bin:
     chromedriver: bin/chromedriver
-  checksum: 10c0/d8795c287cde40e16768c475553bf4c080699665c879f91f97816c0aab7ae11276ffabca2a2df2a078470421736f48c5a9591894a1dae31ddda50e9d78393895
+  checksum: 10c0/86bae491f09ce8b9e5a7dcd8607323c1394946f39ded0a5409d5485380e864ebfecc32f6998cd9b30e80f3b76c5e1364b22d85bc98a823c09341d732b705121d
   languageName: node
   linkType: hard
 
@@ -4292,10 +4299,10 @@ __metadata:
     "@wdio/cli": "npm:^9.27.1"
     "@wdio/cucumber-framework": "npm:^9.27.1"
     "@wdio/local-runner": "npm:^9.27.1"
-    allure-commandline: "npm:^2.40.0"
-    chromedriver: "npm:^148.0.2"
+    allure-commandline: "npm:^2.41.0"
+    chromedriver: "npm:^148.0.3"
     cucumber: "npm:^6.0.7"
-    eslint: "npm:^10.3.0"
+    eslint: "npm:^10.4.0"
     eslint-config-prettier: "npm:^10.1.8"
     eslint-plugin-wdio: "npm:^9.27.1"
     prettier: "npm:^3.8.3"
@@ -4788,14 +4795,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^10.3.0":
-  version: 10.3.0
-  resolution: "eslint@npm:10.3.0"
+"eslint@npm:^10.4.0":
+  version: 10.4.0
+  resolution: "eslint@npm:10.4.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.8.0"
     "@eslint-community/regexpp": "npm:^4.12.2"
     "@eslint/config-array": "npm:^0.23.5"
-    "@eslint/config-helpers": "npm:^0.5.5"
+    "@eslint/config-helpers": "npm:^0.6.0"
     "@eslint/core": "npm:^1.2.1"
     "@eslint/plugin-kit": "npm:^0.7.1"
     "@humanfs/node": "npm:^0.16.6"
@@ -4829,7 +4836,7 @@ __metadata:
       optional: true
   bin:
     eslint: bin/eslint.js
-  checksum: 10c0/81e3ceba949f62d1b530660279db86cf814f5dc43d7cc3759a8008fe4fc679d46568279fe1cceb7ddbbc98ab57a96ae524f6e811ffc6897b49b90ea08aa785e5
+  checksum: 10c0/6bf644dc08fa5a6b23157d23a4a4638d45823d03a67da1daac8dc1085b03934fa98013efd2eac2cd6ec90fe88d36b336bdf38d5f000325f22d823a15f2031426
   languageName: node
   linkType: hard
 
